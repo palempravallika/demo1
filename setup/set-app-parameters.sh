@@ -25,7 +25,7 @@ echo "Setting the application parameter values in the Secrets Manager..."
 aws secretsmanager create-secret --name "/cafe/showServerInfo" --secret-string "false"
 aws secretsmanager create-secret --name "/cafe/timeZone" --secret-string "America/New_York"
 aws secretsmanager create-secret --name "/cafe/currency" --secret-string "$"
-aws secretsmanager create-secret --name "/cafe/dbUrl1" --secret-string $publicDNS
+aws secretsmanager create-secret --name "/cafe/dbUrl" --secret-string $publicDNS
 aws secretsmanager create-secret --name "/cafe/dbName" --secret-string "cafe_db"
 aws secretsmanager create-secret --name "/cafe/dbUser" --secret-string "admin"
 aws secretsmanager create-secret --name "/cafe/dbPassword" --secret-string "Lab123#"
